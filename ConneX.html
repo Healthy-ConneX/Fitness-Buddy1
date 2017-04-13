@@ -17,10 +17,13 @@
   <div class="container">
     <div class="jumbotron">
       <h1 class="one font-effect-fire-animation">Healthy ConneX</h1>
+
 </div>
   <!-- Link with New Tab -->
+
+  <h3>Welcome! Please fill out the form below to see matchup with Healthy Connex members in your area</h3>
     <hr>
-    <form>
+    <form id= "second-form">
   <div class="control-group">
                     <label class="control-label">Gender:</label>
                     <div class="controls">
@@ -67,8 +70,13 @@
                   <option value=Exp>Hardcore</option>
                                   </select>
       </div>
+
       </form>
+      <div class= "buttons">
   <button type="submit" class="btn btn-default" id="search-user-btn">Submit</button>
+
+  <button type="submit" class="btn btn-default" id="empty-user-btn">Clear Table</button>
+  </div>
  
 </form>
         </div>
@@ -79,14 +87,15 @@
 <div class="row">
 <div class="col-1g-12">
   <div class="panel panel-default" id="athlete-form">
-     <div class="panel-heading">Athletes in Your Area:</div>
-        <div class="panel-body">
+     <div class="panel-heading" id="athletes"><h4>Athletes in Your Area:</h4></div>
+        <div class="panel-body" id="results">
        <table class="table table-hover" id='athlete-table'>
                 <thead>
                   <tr>
-                    <th>User</th>
+                    <th class= "center">User</th>
                     <th>Favorite Activity</th>
-                    <th>Email</th>
+                    <th class= "center">Email</th>
+                    <th>Age Range</th>
                     <th>Gender</th>
                     
                    </tr>
@@ -100,12 +109,24 @@
     </div>
 <hr>
 
-<div id="floating-panel">
+<iframe
+ width="600"
+ height="450"
+ position="center"
+ frameborder="0" style="border:0;margin-left:500px;"
+ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB_3NNpNcBExD4pqGkoVeeXXI99JrAxFBQ
+   &q=Chapel Hill, NC" allowfullscreen>
+</iframe>
+
+<br> <br>
+
+<!--<div id="floating-panel">
       <input id="address" type="textbox" value="Chapel Hill, NC">
       <input id="submit" type="button" value="Geocode">
     </div>
   <div id="map" style="width:75%;height:85%;position:center"></div>
     <div class="click">
+  -->
      <button><a href="https://en-gb.facebook.com/login/" target="_blank">ConneX to Facebook</a></button>
      <button><a href="https://twitter.com/?lang=en">ConneX to Twitter</a></button>
      <button><a href="https://www.instagram.com/?hl=en" target="_blank">ConneX to Instagram</a></button>
@@ -114,11 +135,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script rel="stylesheet" type="text/javascript" href="data.js"></script>
  <script type="text/javascript" src="assets/javascript/logic.js"></script>
-  <script
+<!--  <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYKz1hIpSy_Zc8kV6RUsh_55e7UHn5xl8&callback=initMap"></script>
     
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYKz1hIpSy_Zc8kV6RUsh_55e7UHn5xl8&libraries=geometry"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYKz1hIpSy_Zc8kV6RUsh_55e7UHn5xl8&libraries=geometry"></script>
-
+-->
 </body>
 </html>

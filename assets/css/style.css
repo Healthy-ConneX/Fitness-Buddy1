@@ -1,5 +1,5 @@
 .jumbotron {
-  background-image: url("../../images/pexels-photo-24306.jpg");
+  background-image: url(../images/pexels-photo-24306.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1800px;
@@ -58,19 +58,7 @@ margin-left: -900px;
 }
 
 
-#map {
- 
- width: 75%!important;
- border-style: solid;
- border-color:orange;
- border-width: 20px;
- position: relative;
- overflow: hidden;
- padding-bottom: 22.25%;
- padding-top: 30px;
- padding-left: 200px;
- margin-left: 10%;
-}
+
 
 body {
   background-color: #5c687c ;
